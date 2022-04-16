@@ -1,0 +1,98 @@
+body {
+    max-width: 400px;
+    height: 100%;
+    color: #ffffff;
+    padding: 1em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+.card {
+    padding: 2em;
+    max-width: 60%;
+}
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+#card-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+#card-1 button {
+    color: hsl(31, 77%, 52%);
+}
+#card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+#card-2 button {
+    color: hsl(184, 100%, 22%);
+}
+#card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+#card-3 button {
+    color: hsl(179, 100%, 13%);
+}
+.card button {
+    background-color: #ffffff;
+    padding: 0.75em 1.5em;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-top: 1em;
+    font-family: inherit;
+}
+.card button:hover {
+    background-color: inherit;
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: hsl(179, 100%, 13%);
+}
+footer a {
+    color: hsl(31, 77%, 52%);
+    margin: 0em 0.5em;
+}
+/* MEDIA QUERY */
+@media (min-width:400px) {
+    body {
+        min-width: 400px;
+        max-width: 1440px;
+        height: 100vh;
+    }
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+    }
+    .card {
+        width: 15%;
+    }
+    #card-1 {
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0em;
+        border-bottom-left-radius: 0.5em;
+    }
+    #card-3 {
+        border-top-right-radius: 0.5em;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0.5em;
+    }
+    .card button {
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+}
+
